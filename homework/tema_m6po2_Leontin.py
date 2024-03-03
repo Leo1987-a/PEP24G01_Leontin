@@ -1,3 +1,12 @@
+# ! = s
+# @ = h
+## = e
+# $ = r
+# ^ = l
+# % = o
+# & = c
+# * = k
+
 str = '''in p$imava$a anu^ui 1894, t%ata ^%nd$a a f%!t int#$#!ata, ia$
 ^um#a ^a m%da a f%!t &%n!t#$nata d# u&id#$#a %n%$abi^u^ui $%na^d
 adai$ in &i$&um!tant# &#^# mai n#%bi!nuit# !i in#xp^i&abi^#.
@@ -17,13 +26,21 @@ n%u a&#^ p%t%p b$u!& d# bu&u$i#, uimi$# !i n#in&$#d#$# &a$# mi-a
 str = str.replace('!', 's').replace('@', 'h').replace('#', 'e').replace('$', 'r').replace('^', 'l').replace('%','o').replace('&','c').replace('*','k')
 print(str)
 
-str= str.capitalize()
-print(str)
-# ! = s
-# @ = h
-## = e
-# $ = r
-# ^ = l
-# % = o
-# & = c
-# * = k
+#b)primul element din fiecare cuvant sa fie capitalizat
+str2 = str.capitalize()
+print(str2)
+
+#c)impartirea textului intr-o lista
+str1 = str
+list_1 = list(str.split(" "))
+print(list_1)
+
+#d)
+
+list_2 = list_1
+
+if all(len(elements) <= 5 for elements in list_2):
+    print('Cuvinte scurte ')
+#elif all(len(elements)) 5<=8 elements in (list_2)
+    print('Cuvinte medii')
+    # all(len(elements) 5 < x <= 8for elements in list_2):
